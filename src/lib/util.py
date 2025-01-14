@@ -103,7 +103,9 @@ def calc_result(hex_one, hex_two, hex_three, hex_multiplier, hex_tolerance, hex_
         tolerance_value = temp_value * 0.2
         min_color = temp_value - tolerance_value
         max_color = temp_value + tolerance_value
-        result_var = min_color/1000 , "KΩ - KΩ", max_color/1000
+        nominal_color = (min_color/1000 + max_color/1000)/2
+        interval_var = min_color/1000, "KΩ", "-", max_color/1000, "KΩ"
+        result_var = nominal_color, "KΩ"
         value_var.set(result_var)
 
     elif detect_number == 1:
@@ -112,7 +114,9 @@ def calc_result(hex_one, hex_two, hex_three, hex_multiplier, hex_tolerance, hex_
         tolerance_value = temp_value * int_var_tolerance
         min_color = temp_value - tolerance_value
         max_color = temp_value + tolerance_value
-        result_var = min_color/1000 , "KΩ - KΩ", max_color/1000
+        nominal_color = (min_color/1000 + max_color/1000)/2
+        interval_var = min_color/1000, "KΩ", "-", max_color/1000, "KΩ"
+        result_var = nominal_color, "KΩ"
         value_var.set(result_var)
 
     elif detect_number == 2:
@@ -122,7 +126,9 @@ def calc_result(hex_one, hex_two, hex_three, hex_multiplier, hex_tolerance, hex_
         tolerance_value = temp_value * int_var_tolerance
         min_color = temp_value - tolerance_value
         max_color = temp_value + tolerance_value
-        result_var = min_color/1000 , "KΩ - KΩ", max_color/1000
+        nominal_color = (min_color/1000 + max_color/1000)/2
+        interval_var = min_color/1000, "KΩ", "-", max_color/1000, "KΩ"
+        result_var = nominal_color, "KΩ"
         value_var.set(result_var)
 
     elif detect_number == 3:
@@ -134,7 +140,9 @@ def calc_result(hex_one, hex_two, hex_three, hex_multiplier, hex_tolerance, hex_
         tolerance_value = temp_value * int_var_tolerance
         min_color = temp_value - tolerance_value
         max_color = temp_value + tolerance_value
-        result_var = min_color/1000 , "KΩ - KΩ", max_color/1000
+        nominal_color = (min_color/1000 + max_color/1000)/2
+        interval_var = min_color/1000, "KΩ", "-", max_color/1000, "KΩ"
+        result_var = nominal_color, "KΩ"
         value_var.set(result_var)
         temperature_var.set(str_temparature)
 # ------------------ #
